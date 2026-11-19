@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="Документ" id="1">
+			<DataPath>Документ.ВнешнийНомер</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ДокументКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ДокументРасширеннаяПодсказка" id="3"/>
+		</LabelField>
+		<Table name="ТаблицаИсполнителей" id="5">
+			<Representation>List</Representation>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаИсполнителей</DataPath>
+			<ShowCommandBar>auto</ShowCommandBar>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаИсполнителейКонтекстноеМеню" id="6"/>
+			<AutoCommandBar name="ТаблицаИсполнителейКоманднаяПанель" id="7">
+				<ChildItems>
+					<Button name="ТаблицаИсполнителейКнопка1" id="38">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.Назначить</CommandName>
+						<ButtonImportance>Main</ButtonImportance>
+						<ExtendedTooltip name="ТаблицаИсполнителейКнопка1РасширеннаяПодсказка" id="39"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаИсполнителейРасширеннаяПодсказка" id="8"/>
+			<SearchStringAddition name="ТаблицаИсполнителейСтрокаПоиска" id="9">
+				<AdditionSource>
+					<Item>ТаблицаИсполнителей</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаИсполнителейСтрокаПоискаКонтекстноеМеню" id="10"/>
+				<ExtendedTooltip name="ТаблицаИсполнителейСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаИсполнителейСостояниеПросмотра" id="12">
+				<AdditionSource>
+					<Item>ТаблицаИсполнителей</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаИсполнителейСостояниеПросмотраКонтекстноеМеню" id="13"/>
+				<ExtendedTooltip name="ТаблицаИсполнителейСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаИсполнителейУправлениеПоиском" id="15">
+				<AdditionSource>
+					<Item>ТаблицаИсполнителей</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаИсполнителейУправлениеПоискомКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="ТаблицаИсполнителейУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаИсполнителейСотрудник" id="26">
+					<DataPath>ТаблицаИсполнителей.Сотрудник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаИсполнителейСотрудникКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТаблицаИсполнителейСотрудникРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ТаблицаИсполнителейСрокИсполнения" id="30">
+					<DataPath>ТаблицаИсполнителей.СрокИсполнения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаИсполнителейСрокИсполненияКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ТаблицаИсполнителейСрокИсполненияРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="ТаблицаИсполнителейКомментарий" id="34">
+					<DataPath>ТаблицаИсполнителей.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаИсполнителейКомментарийКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ТаблицаИсполнителейКомментарийРасширеннаяПодсказка" id="36"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Документ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.УчетныйДокумент</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаИсполнителей" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица исполнителей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Сотрудник" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПрокурорскиеРаботники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СрокИсполнения" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Срок исполнения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Назначить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Назначить</Action>
+		</Command>
+	</Commands>
+</Form>

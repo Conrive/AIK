@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Enum uuid="452fa3c8-68e1-4eaa-b03e-ed41d0b2945a">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТипыСвязейДокументов" category="Ref">
+				<xr:TypeId>0f104fef-1021-497d-ad03-3b2989238535</xr:TypeId>
+				<xr:ValueId>27560047-0270-4c68-8956-0fa7834299b3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТипыСвязейДокументов" category="Manager">
+				<xr:TypeId>7ca20617-6db7-470b-a187-f657789cb3bb</xr:TypeId>
+				<xr:ValueId>bc28f789-9469-4241-a13b-7bb7cf8cbcc0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТипыСвязейДокументов" category="List">
+				<xr:TypeId>ef2050e1-f9cd-45fd-84d5-d84a34583fda</xr:TypeId>
+				<xr:ValueId>7bf74892-d874-4a11-a8c3-cffb6053a9a3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТипыСвязейДокументов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Типы связей документов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="c0d133e2-edfc-4d3b-bf11-3cd17f74074e">
+				<Properties>
+					<Name>ДляИсполненияИсполнено</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Для исполнения - Исполнено</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Задание - Исполнение</Comment>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="df919b22-8be9-4284-b08d-77abfddc10b2">
+				<Properties>
+					<Name>ПоступилоДанОтвет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поступило - Дан ответ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Обращение - Ответ</Comment>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1c0ffe42-5811-49c1-9465-e60cd349eca8">
+				<Properties>
+					<Name>ПоступилоПеренаправлено</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поступило - Перенаправлено</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Обращение - Перенаправление</Comment>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="37644a20-0a79-4c8c-8f2e-cbed4ff39a42">
+				<Properties>
+					<Name>ПоступилоОтправленЗапрос</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поступило - Отправлен запрос</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b5d45552-c9ae-4eed-899e-a1769e33e647">
+				<Properties>
+					<Name>ЗапросИсходящийОтвет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запрос - Исходящий ответ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8130c73e-2640-4ee7-a6d2-9bc1f0fe047f">
+				<Properties>
+					<Name>ПоручениеВходящийОтвет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поручение - Входящий ответ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

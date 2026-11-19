@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Enum uuid="a5c4242d-87d4-4c5d-9430-24e709ff0b4f">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТипыДокументов" category="Ref">
+				<xr:TypeId>4e6e864c-5ec1-400c-9e81-33c22b36d937</xr:TypeId>
+				<xr:ValueId>065a7e57-54ef-4384-9173-b9e0753a1b96</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТипыДокументов" category="Manager">
+				<xr:TypeId>ff16140a-19a5-49eb-aa60-9623961fa865</xr:TypeId>
+				<xr:ValueId>5309435a-a3fd-4ee3-add5-14b380e7ef35</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТипыДокументов" category="List">
+				<xr:TypeId>d6333754-892e-46d1-9607-807f5721751a</xr:TypeId>
+				<xr:ValueId>3970d08b-f0c4-45f3-9ba2-efc87415fa5a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТипыДокументов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Типы документов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="7701bc17-6876-40b7-959f-4ad76c357613">
+				<Properties>
+					<Name>ВходящийДокумент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Входящий документ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>ВХ</Comment>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="80486a4c-f7de-48e9-8800-e7db34baa18d">
+				<Properties>
+					<Name>ИсходящийДокумент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исходящий документ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>ИСХ</Comment>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a2e1ee4f-7846-48be-8454-82dc9f2cb667">
+				<Properties>
+					<Name>ОбращенияГраждан</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обращения граждан</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>ОБР</Comment>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="eff4bf04-dd0e-4a2b-80cd-be88afca01de">
+				<Properties>
+					<Name>ОтветНаОбращение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответ на обращение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>ОТВ</Comment>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="17dc73fd-dc62-444d-b890-9e1954d31430">
+				<Properties>
+					<Name>ПеренаправлениеОбращение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перенаправление обращение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>ПР</Comment>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="42f0c0fa-7f37-45e5-9893-d817a1f9282e">
+				<Properties>
+					<Name>АктПрокурорскогоРеагирования</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Акт прокурорского реагирования</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>ДПР</Comment>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ef7d4520-b39a-49d8-8ade-805badcab177">
+				<Properties>
+					<Name>ВнутреннийДокумент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Внутренний документ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>ВН</Comment>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

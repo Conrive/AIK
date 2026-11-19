@@ -1,0 +1,1278 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>АИК-Надзор</v8:content>
+		</v8:item>
+	</Title>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ВерхняяГруппа" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Верхняя группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Верхняя группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ВерхняяГруппаРасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВсеДокументы" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Все новые документы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа все документы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаВсеДокументыРасширеннаяПодсказка" id="2"/>
+					<ChildItems>
+						<Table name="ВсеНовыеДокументы" id="632">
+							<UseAlternationRowColorBWA>true</UseAlternationRowColorBWA>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ВсеНовыеДокументы</DataPath>
+							<RowPictureDataPath>ВсеНовыеДокументы.DefaultPicture</RowPictureDataPath>
+							<ShowCommandBar>auto</ShowCommandBar>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ВсеНовыеДокументыКонтекстноеМеню" id="633"/>
+							<AutoCommandBar name="ВсеНовыеДокументыКоманднаяПанель" id="634"/>
+							<ExtendedTooltip name="ВсеНовыеДокументыРасширеннаяПодсказка" id="635"/>
+							<SearchStringAddition name="ВсеНовыеДокументыСтрокаПоиска" id="636">
+								<AdditionSource>
+									<Item>ВсеНовыеДокументы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВсеНовыеДокументыСтрокаПоискаКонтекстноеМеню" id="637"/>
+								<ExtendedTooltip name="ВсеНовыеДокументыСтрокаПоискаРасширеннаяПодсказка" id="638"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВсеНовыеДокументыСостояниеПросмотра" id="639">
+								<AdditionSource>
+									<Item>ВсеНовыеДокументы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВсеНовыеДокументыСостояниеПросмотраКонтекстноеМеню" id="640"/>
+								<ExtendedTooltip name="ВсеНовыеДокументыСостояниеПросмотраРасширеннаяПодсказка" id="641"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВсеНовыеДокументыУправлениеПоиском" id="642">
+								<AdditionSource>
+									<Item>ВсеНовыеДокументы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВсеНовыеДокументыУправлениеПоискомКонтекстноеМеню" id="643"/>
+								<ExtendedTooltip name="ВсеНовыеДокументыУправлениеПоискомРасширеннаяПодсказка" id="644"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ВсеНовыеДокументыВнешнийНомер" id="653">
+									<DataPath>ВсеНовыеДокументы.ВнешнийНомер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ВсеНовыеДокументыВнешнийНомерКонтекстноеМеню" id="654"/>
+									<ExtendedTooltip name="ВсеНовыеДокументыВнешнийНомерРасширеннаяПодсказка" id="655"/>
+								</LabelField>
+								<LabelField name="ВсеНовыеДокументыДатаПересылки" id="661">
+									<DataPath>ВсеНовыеДокументы.ДатаПересылки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ВсеНовыеДокументыДатаПересылкиКонтекстноеМеню" id="662"/>
+									<ExtendedTooltip name="ВсеНовыеДокументыДатаПересылкиРасширеннаяПодсказка" id="663"/>
+								</LabelField>
+								<LabelField name="ВсеНовыеДокументыОтправитель" id="665">
+									<DataPath>ВсеНовыеДокументы.Отправитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ВсеНовыеДокументыОтправительКонтекстноеМеню" id="666"/>
+									<ExtendedTooltip name="ВсеНовыеДокументыОтправительРасширеннаяПодсказка" id="667"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНаПодписи" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы на подписи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа на подписи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНаПодписиРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<Table name="ДокументыНаПодписи" id="121">
+							<UseAlternationRowColorBWA>true</UseAlternationRowColorBWA>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ДокументыНаПодписи</DataPath>
+							<RowPictureDataPath>ДокументыНаПодписи.DefaultPicture</RowPictureDataPath>
+							<ShowCommandBar>auto</ShowCommandBar>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ДокументыНаПодписиКонтекстноеМеню" id="122"/>
+							<AutoCommandBar name="ДокументыНаПодписиКоманднаяПанель" id="123"/>
+							<ExtendedTooltip name="ДокументыНаПодписиРасширеннаяПодсказка" id="124"/>
+							<SearchStringAddition name="ДокументыНаПодписиСтрокаПоиска" id="125">
+								<AdditionSource>
+									<Item>ДокументыНаПодписи</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыНаПодписиСтрокаПоискаКонтекстноеМеню" id="126"/>
+								<ExtendedTooltip name="ДокументыНаПодписиСтрокаПоискаРасширеннаяПодсказка" id="127"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДокументыНаПодписиСостояниеПросмотра" id="128">
+								<AdditionSource>
+									<Item>ДокументыНаПодписи</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыНаПодписиСостояниеПросмотраКонтекстноеМеню" id="129"/>
+								<ExtendedTooltip name="ДокументыНаПодписиСостояниеПросмотраРасширеннаяПодсказка" id="130"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДокументыНаПодписиУправлениеПоиском" id="131">
+								<AdditionSource>
+									<Item>ДокументыНаПодписи</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыНаПодписиУправлениеПоискомКонтекстноеМеню" id="132"/>
+								<ExtendedTooltip name="ДокументыНаПодписиУправлениеПоискомРасширеннаяПодсказка" id="133"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ДокументыНаПодписиВнешнийНомер" id="142">
+									<DataPath>ДокументыНаПодписи.ВнешнийНомер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>1</Width>
+									<ContextMenu name="ДокументыНаПодписиВнешнийНомерКонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="ДокументыНаПодписиВнешнийНомерРасширеннаяПодсказка" id="144"/>
+								</LabelField>
+								<LabelField name="ДокументыНаПодписиДата" id="146">
+									<DataPath>ДокументыНаПодписи.Дата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>1</Width>
+									<ContextMenu name="ДокументыНаПодписиДатаКонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="ДокументыНаПодписиДатаРасширеннаяПодсказка" id="148"/>
+								</LabelField>
+								<LabelField name="ДокументыНаПодписиИсполнитель" id="150">
+									<DataPath>ДокументыНаПодписи.Исполнитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыНаПодписиИсполнительКонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="ДокументыНаПодписиИсполнительРасширеннаяПодсказка" id="152"/>
+								</LabelField>
+								<LabelField name="ДокументыНаПодписиОписание" id="154">
+									<DataPath>ДокументыНаПодписи.Описание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыНаПодписиОписаниеКонтекстноеМеню" id="155"/>
+									<ExtendedTooltip name="ДокументыНаПодписиОписаниеРасширеннаяПодсказка" id="156"/>
+								</LabelField>
+								<LabelField name="ДокументыНаПодписиТипДокумента" id="170">
+									<DataPath>ДокументыНаПодписи.ТипДокумента</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыНаПодписиТипДокументаКонтекстноеМеню" id="171"/>
+									<ExtendedTooltip name="ДокументыНаПодписиТипДокументаРасширеннаяПодсказка" id="172"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПодписанные" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписанные документы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подписанные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПодписанныеРасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<Table name="ДокументыПодписанные" id="178">
+							<UseAlternationRowColorBWA>true</UseAlternationRowColorBWA>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ДокументыПодписанные</DataPath>
+							<RowPictureDataPath>ДокументыПодписанные.DefaultPicture</RowPictureDataPath>
+							<ShowCommandBar>auto</ShowCommandBar>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ДокументыПодписанныеКонтекстноеМеню" id="179"/>
+							<AutoCommandBar name="ДокументыПодписанныеКоманднаяПанель" id="180"/>
+							<ExtendedTooltip name="ДокументыПодписанныеРасширеннаяПодсказка" id="181"/>
+							<SearchStringAddition name="ДокументыПодписанныеСтрокаПоиска" id="182">
+								<AdditionSource>
+									<Item>ДокументыПодписанные</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыПодписанныеСтрокаПоискаКонтекстноеМеню" id="183"/>
+								<ExtendedTooltip name="ДокументыПодписанныеСтрокаПоискаРасширеннаяПодсказка" id="184"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДокументыПодписанныеСостояниеПросмотра" id="185">
+								<AdditionSource>
+									<Item>ДокументыПодписанные</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыПодписанныеСостояниеПросмотраКонтекстноеМеню" id="186"/>
+								<ExtendedTooltip name="ДокументыПодписанныеСостояниеПросмотраРасширеннаяПодсказка" id="187"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДокументыПодписанныеУправлениеПоиском" id="188">
+								<AdditionSource>
+									<Item>ДокументыПодписанные</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыПодписанныеУправлениеПоискомКонтекстноеМеню" id="189"/>
+								<ExtendedTooltip name="ДокументыПодписанныеУправлениеПоискомРасширеннаяПодсказка" id="190"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ДокументыПодписанныеВнешнийНомер" id="199">
+									<DataPath>ДокументыПодписанные.ВнешнийНомер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>1</Width>
+									<ContextMenu name="ДокументыПодписанныеВнешнийНомерКонтекстноеМеню" id="200"/>
+									<ExtendedTooltip name="ДокументыПодписанныеВнешнийНомерРасширеннаяПодсказка" id="201"/>
+								</LabelField>
+								<LabelField name="ДокументыПодписанныеДата" id="203">
+									<DataPath>ДокументыПодписанные.Дата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>1</Width>
+									<ContextMenu name="ДокументыПодписанныеДатаКонтекстноеМеню" id="204"/>
+									<ExtendedTooltip name="ДокументыПодписанныеДатаРасширеннаяПодсказка" id="205"/>
+								</LabelField>
+								<LabelField name="ДокументыПодписанныеИсполнитель" id="207">
+									<DataPath>ДокументыПодписанные.Исполнитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыПодписанныеИсполнительКонтекстноеМеню" id="208"/>
+									<ExtendedTooltip name="ДокументыПодписанныеИсполнительРасширеннаяПодсказка" id="209"/>
+								</LabelField>
+								<LabelField name="ДокументыПодписанныеОписание" id="211">
+									<DataPath>ДокументыПодписанные.Описание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыПодписанныеОписаниеКонтекстноеМеню" id="212"/>
+									<ExtendedTooltip name="ДокументыПодписанныеОписаниеРасширеннаяПодсказка" id="213"/>
+								</LabelField>
+								<LabelField name="ДокументыПодписанныеТипДокумента" id="227">
+									<DataPath>ДокументыПодписанные.ТипДокумента</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыПодписанныеТипДокументаКонтекстноеМеню" id="228"/>
+									<ExtendedTooltip name="ДокументыПодписанныеТипДокументаРасширеннаяПодсказка" id="229"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНеПодписанные" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не подписанные документы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа не подписанные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНеПодписанныеРасширеннаяПодсказка" id="8"/>
+					<ChildItems>
+						<Table name="ДокументыНеПодписанные" id="235">
+							<UseAlternationRowColorBWA>true</UseAlternationRowColorBWA>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ДокументыНеПодписанные</DataPath>
+							<RowPictureDataPath>ДокументыНеПодписанные.DefaultPicture</RowPictureDataPath>
+							<ShowCommandBar>auto</ShowCommandBar>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ДокументыНеПодписанныеКонтекстноеМеню" id="236"/>
+							<AutoCommandBar name="ДокументыНеПодписанныеКоманднаяПанель" id="237"/>
+							<ExtendedTooltip name="ДокументыНеПодписанныеРасширеннаяПодсказка" id="238"/>
+							<SearchStringAddition name="ДокументыНеПодписанныеСтрокаПоиска" id="239">
+								<AdditionSource>
+									<Item>ДокументыНеПодписанные</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыНеПодписанныеСтрокаПоискаКонтекстноеМеню" id="240"/>
+								<ExtendedTooltip name="ДокументыНеПодписанныеСтрокаПоискаРасширеннаяПодсказка" id="241"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДокументыНеПодписанныеСостояниеПросмотра" id="242">
+								<AdditionSource>
+									<Item>ДокументыНеПодписанные</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыНеПодписанныеСостояниеПросмотраКонтекстноеМеню" id="243"/>
+								<ExtendedTooltip name="ДокументыНеПодписанныеСостояниеПросмотраРасширеннаяПодсказка" id="244"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДокументыНеПодписанныеУправлениеПоиском" id="245">
+								<AdditionSource>
+									<Item>ДокументыНеПодписанные</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыНеПодписанныеУправлениеПоискомКонтекстноеМеню" id="246"/>
+								<ExtendedTooltip name="ДокументыНеПодписанныеУправлениеПоискомРасширеннаяПодсказка" id="247"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ДокументыНеПодписанныеВнешнийНомер" id="256">
+									<DataPath>ДокументыНеПодписанные.ВнешнийНомер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>1</Width>
+									<ContextMenu name="ДокументыНеПодписанныеВнешнийНомерКонтекстноеМеню" id="257"/>
+									<ExtendedTooltip name="ДокументыНеПодписанныеВнешнийНомерРасширеннаяПодсказка" id="258"/>
+								</LabelField>
+								<LabelField name="ДокументыНеПодписанныеДата" id="260">
+									<DataPath>ДокументыНеПодписанные.Дата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<Width>1</Width>
+									<ContextMenu name="ДокументыНеПодписанныеДатаКонтекстноеМеню" id="261"/>
+									<ExtendedTooltip name="ДокументыНеПодписанныеДатаРасширеннаяПодсказка" id="262"/>
+								</LabelField>
+								<LabelField name="ДокументыНеПодписанныеИсполнитель" id="264">
+									<DataPath>ДокументыНеПодписанные.Исполнитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыНеПодписанныеИсполнительКонтекстноеМеню" id="265"/>
+									<ExtendedTooltip name="ДокументыНеПодписанныеИсполнительРасширеннаяПодсказка" id="266"/>
+								</LabelField>
+								<LabelField name="ДокументыНеПодписанныеОписание" id="268">
+									<DataPath>ДокументыНеПодписанные.Описание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыНеПодписанныеОписаниеКонтекстноеМеню" id="269"/>
+									<ExtendedTooltip name="ДокументыНеПодписанныеОписаниеРасширеннаяПодсказка" id="270"/>
+								</LabelField>
+								<LabelField name="ДокументыНеПодписанныеТипДокумента" id="284">
+									<DataPath>ДокументыНеПодписанные.ТипДокумента</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыНеПодписанныеТипДокументаКонтекстноеМеню" id="285"/>
+									<ExtendedTooltip name="ДокументыНеПодписанныеТипДокументаРасширеннаяПодсказка" id="286"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="НижняяГруппа" id="11">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нижняя группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<ExtendedTooltip name="НижняяГруппаРасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНаИсполнении" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы на исполнении</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа на исполнении</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНаИсполненииРасширеннаяПодсказка" id="14"/>
+					<ChildItems>
+						<Table name="ДокументыНаИсполнении" id="764">
+							<UseAlternationRowColorBWA>true</UseAlternationRowColorBWA>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ДокументыНаИсполнении</DataPath>
+							<RowPictureDataPath>ДокументыНаИсполнении.DefaultPicture</RowPictureDataPath>
+							<ShowCommandBar>auto</ShowCommandBar>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ДокументыНаИсполненииКонтекстноеМеню" id="765"/>
+							<AutoCommandBar name="ДокументыНаИсполненииКоманднаяПанель" id="766"/>
+							<ExtendedTooltip name="ДокументыНаИсполненииРасширеннаяПодсказка" id="767"/>
+							<SearchStringAddition name="ДокументыНаИсполненииСтрокаПоиска" id="768">
+								<AdditionSource>
+									<Item>ДокументыНаИсполнении</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыНаИсполненииСтрокаПоискаКонтекстноеМеню" id="769"/>
+								<ExtendedTooltip name="ДокументыНаИсполненииСтрокаПоискаРасширеннаяПодсказка" id="770"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДокументыНаИсполненииСостояниеПросмотра" id="771">
+								<AdditionSource>
+									<Item>ДокументыНаИсполнении</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыНаИсполненииСостояниеПросмотраКонтекстноеМеню" id="772"/>
+								<ExtendedTooltip name="ДокументыНаИсполненииСостояниеПросмотраРасширеннаяПодсказка" id="773"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДокументыНаИсполненииУправлениеПоиском" id="774">
+								<AdditionSource>
+									<Item>ДокументыНаИсполнении</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДокументыНаИсполненииУправлениеПоискомКонтекстноеМеню" id="775"/>
+								<ExtendedTooltip name="ДокументыНаИсполненииУправлениеПоискомРасширеннаяПодсказка" id="776"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ДокументыНаИсполненииВнешнийНомер" id="785">
+									<DataPath>ДокументыНаИсполнении.ВнешнийНомер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыНаИсполненииВнешнийНомерКонтекстноеМеню" id="786"/>
+									<ExtendedTooltip name="ДокументыНаИсполненииВнешнийНомерРасширеннаяПодсказка" id="787"/>
+								</LabelField>
+								<LabelField name="ДокументыНаИсполненииДатаНазначения" id="789">
+									<DataPath>ДокументыНаИсполнении.ДатаНазначения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыНаИсполненииДатаНазначенияКонтекстноеМеню" id="790"/>
+									<ExtendedTooltip name="ДокументыНаИсполненииДатаНазначенияРасширеннаяПодсказка" id="791"/>
+								</LabelField>
+								<LabelField name="ДокументыНаИсполненииКомментарий" id="797">
+									<DataPath>ДокументыНаИсполнении.Комментарий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыНаИсполненииКомментарийКонтекстноеМеню" id="798"/>
+									<ExtendedTooltip name="ДокументыНаИсполненииКомментарийРасширеннаяПодсказка" id="799"/>
+								</LabelField>
+								<LabelField name="ДокументыНаИсполненииСрокИсполнения" id="805">
+									<DataPath>ДокументыНаИсполнении.СрокИсполнения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ДокументыНаИсполненииСрокИсполненияКонтекстноеМеню" id="806"/>
+									<ExtendedTooltip name="ДокументыНаИсполненииСрокИсполненияРасширеннаяПодсказка" id="807"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ВсеНовыеДокументы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все новые документы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+    УчетныйДокумент.Ссылка КАК Ссылка,
+    УчетныйДокумент.ВнешнийНомер КАК ВнешнийНомер,
+    СтатусыОзнакомления.Отправитель КАК Отправитель,
+    СтатусыОзнакомления.ДатаПересылки КАК ДатаПересылки
+ИЗ
+    РегистрСведений.СтатусыОзнакомления КАК СтатусыОзнакомления 
+    ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.УчетныйДокумент КАК УчетныйДокумент
+        ПО СтатусыОзнакомления.Документ = УчетныйДокумент.Ссылка
+ГДЕ
+    СтатусыОзнакомления.Пользователь = &amp;ТекущийСотрудник
+    И СтатусыОзнакомления.Ознакомлен = ЛОЖЬ</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Отправитель</dcssch:dataPath>
+					<dcssch:field>Отправитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаПересылки</dcssch:dataPath>
+					<dcssch:field>ДатаПересылки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВнешнийНомер</dcssch:dataPath>
+					<dcssch:field>ВнешнийНомер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипДокумента</dcssch:dataPath>
+					<dcssch:field>ТипДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Исполнитель</dcssch:dataPath>
+					<dcssch:field>Исполнитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Описание</dcssch:dataPath>
+					<dcssch:field>Описание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаРегистрации</dcssch:dataPath>
+					<dcssch:field>ДатаРегистрации</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Примечане</dcssch:dataPath>
+					<dcssch:field>Примечане</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОснАдресат</dcssch:dataPath>
+					<dcssch:field>ОснАдресат</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Корреспондент</dcssch:dataPath>
+					<dcssch:field>Корреспондент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатусДокумента</dcssch:dataPath>
+					<dcssch:field>СтатусДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подписант</dcssch:dataPath>
+					<dcssch:field>Подписант</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Регистратор</dcssch:dataPath>
+					<dcssch:field>Регистратор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проведен</dcssch:dataPath>
+					<dcssch:field>Проведен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МоментВремени</dcssch:dataPath>
+					<dcssch:field>МоментВремени</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаПодписания</dcssch:dataPath>
+					<dcssch:field>ДатаПодписания</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РезультатОбращения</dcssch:dataPath>
+					<dcssch:field>РезультатОбращения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СканДокумента</dcssch:dataPath>
+					<dcssch:field>СканДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УстановленныйИсполнитель</dcssch:dataPath>
+					<dcssch:field>УстановленныйИсполнитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Адресаты</dcssch:dataPath>
+					<dcssch:field>Адресаты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>ТекущийСотрудник</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущий сотрудник</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.ПрокурорскиеРаботники</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Document.УчетныйДокумент</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДокументыНаПодписи" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы на подписи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	УчетныйДокумент.Ссылка КАК Ссылка,
+	УчетныйДокумент.ТипДокумента КАК ТипДокумента,
+	УчетныйДокумент.Описание КАК Описание,
+	УчетныйДокумент.Исполнитель КАК Исполнитель,
+	УчетныйДокумент.ВнешнийНомер КАК ВнешнийНомер
+ИЗ
+	Документ.УчетныйДокумент КАК УчетныйДокумент
+ГДЕ
+	УчетныйДокумент.СтатусДокумента = &amp;СтатусДокумента
+	И УчетныйДокумент.Подписант = &amp;ТекущийСотрудник
+</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипДокумента</dcssch:dataPath>
+					<dcssch:field>ТипДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Исполнитель</dcssch:dataPath>
+					<dcssch:field>Исполнитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Описание</dcssch:dataPath>
+					<dcssch:field>Описание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВнешнийНомер</dcssch:dataPath>
+					<dcssch:field>ВнешнийНомер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Примечане</dcssch:dataPath>
+					<dcssch:field>Примечане</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Корреспондент</dcssch:dataPath>
+					<dcssch:field>Корреспондент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатусДокумента</dcssch:dataPath>
+					<dcssch:field>СтатусДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подписант</dcssch:dataPath>
+					<dcssch:field>Подписант</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Регистратор</dcssch:dataPath>
+					<dcssch:field>Регистратор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проведен</dcssch:dataPath>
+					<dcssch:field>Проведен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МоментВремени</dcssch:dataPath>
+					<dcssch:field>МоментВремени</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаПодписания</dcssch:dataPath>
+					<dcssch:field>ДатаПодписания</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СканДокумента</dcssch:dataPath>
+					<dcssch:field>СканДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РезультатОбращения</dcssch:dataPath>
+					<dcssch:field>РезультатОбращения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаРегистрации</dcssch:dataPath>
+					<dcssch:field>ДатаРегистрации</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УстановленныйИсполнитель</dcssch:dataPath>
+					<dcssch:field>УстановленныйИсполнитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОснАдресат</dcssch:dataPath>
+					<dcssch:field>ОснАдресат</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Адресаты</dcssch:dataPath>
+					<dcssch:field>Адресаты</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>СтатусДокумента</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус документа</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:EnumRef.СтатусыДокументов</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыДокументов.НаПодписи</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ТекущийСотрудник</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущий сотрудник</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.ПрокурорскиеРаботники</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Document.УчетныйДокумент</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:dataParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>СтатусДокумента</dcscor:parameter>
+							<dcscor:value xsi:nil="true"/>
+						</dcscor:item>
+					</dcsset:dataParameters>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДокументыПодписанные" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы подписанные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	УчетныйДокумент.Ссылка КАК Ссылка,
+	УчетныйДокумент.ТипДокумента КАК ТипДокумента,
+	УчетныйДокумент.Описание КАК Описание,
+	УчетныйДокумент.Исполнитель КАК Исполнитель,
+	УчетныйДокумент.ВнешнийНомер КАК ВнешнийНомер
+ИЗ
+	Документ.УчетныйДокумент КАК УчетныйДокумент
+ГДЕ
+	УчетныйДокумент.СтатусДокумента = &amp;СтатусДокумента
+</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипДокумента</dcssch:dataPath>
+					<dcssch:field>ТипДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Исполнитель</dcssch:dataPath>
+					<dcssch:field>Исполнитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Описание</dcssch:dataPath>
+					<dcssch:field>Описание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВнешнийНомер</dcssch:dataPath>
+					<dcssch:field>ВнешнийНомер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Примечане</dcssch:dataPath>
+					<dcssch:field>Примечане</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Адресат</dcssch:dataPath>
+					<dcssch:field>Адресат</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Корреспондент</dcssch:dataPath>
+					<dcssch:field>Корреспондент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатусДокумента</dcssch:dataPath>
+					<dcssch:field>СтатусДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подписант</dcssch:dataPath>
+					<dcssch:field>Подписант</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Регистратор</dcssch:dataPath>
+					<dcssch:field>Регистратор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проведен</dcssch:dataPath>
+					<dcssch:field>Проведен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МоментВремени</dcssch:dataPath>
+					<dcssch:field>МоментВремени</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаПодписания</dcssch:dataPath>
+					<dcssch:field>ДатаПодписания</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СканДокумента</dcssch:dataPath>
+					<dcssch:field>СканДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РезультатОбращения</dcssch:dataPath>
+					<dcssch:field>РезультатОбращения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаРегистрации</dcssch:dataPath>
+					<dcssch:field>ДатаРегистрации</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УстановленныйИсполнитель</dcssch:dataPath>
+					<dcssch:field>УстановленныйИсполнитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>СтатусДокумента</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус документа</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:EnumRef.СтатусыДокументов</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыДокументов.ГотовоКРегистрации</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Document.УчетныйДокумент</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:dataParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>СтатусДокумента</dcscor:parameter>
+							<dcscor:value xsi:nil="true"/>
+						</dcscor:item>
+					</dcsset:dataParameters>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДокументыНеПодписанные" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы не подписанные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	УчетныйДокумент.Ссылка КАК Ссылка,
+	УчетныйДокумент.ТипДокумента КАК ТипДокумента,
+	УчетныйДокумент.Описание КАК Описание,
+	УчетныйДокумент.Исполнитель КАК Исполнитель,
+	УчетныйДокумент.ВнешнийНомер КАК ВнешнийНомер
+ИЗ
+	Документ.УчетныйДокумент КАК УчетныйДокумент
+ГДЕ
+	УчетныйДокумент.СтатусДокумента = &amp;СтатусДокумента
+    И УчетныйДокумент.Исполнитель = &amp;ТекущийСотрудник
+
+</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипДокумента</dcssch:dataPath>
+					<dcssch:field>ТипДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Исполнитель</dcssch:dataPath>
+					<dcssch:field>Исполнитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Описание</dcssch:dataPath>
+					<dcssch:field>Описание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВнешнийНомер</dcssch:dataPath>
+					<dcssch:field>ВнешнийНомер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Примечане</dcssch:dataPath>
+					<dcssch:field>Примечане</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Корреспондент</dcssch:dataPath>
+					<dcssch:field>Корреспондент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатусДокумента</dcssch:dataPath>
+					<dcssch:field>СтатусДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Подписант</dcssch:dataPath>
+					<dcssch:field>Подписант</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Регистратор</dcssch:dataPath>
+					<dcssch:field>Регистратор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проведен</dcssch:dataPath>
+					<dcssch:field>Проведен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МоментВремени</dcssch:dataPath>
+					<dcssch:field>МоментВремени</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаПодписания</dcssch:dataPath>
+					<dcssch:field>ДатаПодписания</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СканДокумента</dcssch:dataPath>
+					<dcssch:field>СканДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РезультатОбращения</dcssch:dataPath>
+					<dcssch:field>РезультатОбращения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаРегистрации</dcssch:dataPath>
+					<dcssch:field>ДатаРегистрации</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УстановленныйИсполнитель</dcssch:dataPath>
+					<dcssch:field>УстановленныйИсполнитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОснАдресат</dcssch:dataPath>
+					<dcssch:field>ОснАдресат</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Адресаты</dcssch:dataPath>
+					<dcssch:field>Адресаты</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>СтатусДокумента</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус документа</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:EnumRef.СтатусыДокументов</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыДокументов.НеПодписан</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ТекущийСотрудник</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущий сотрудник</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.ПрокурорскиеРаботники</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Document.УчетныйДокумент</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:dataParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>СтатусДокумента</dcscor:parameter>
+							<dcscor:value xsi:nil="true"/>
+						</dcscor:item>
+					</dcsset:dataParameters>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ДокументыНаИсполнении" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы на исполнении</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ОтветственныеИсполнители.Документ.ВнешнийНомер КАК ВнешнийНомер,
+	ОтветственныеИсполнители.ДатаНазначения КАК ДатаНазначения,
+	ОтветственныеИсполнители.СрокИсполнения КАК СрокИсполнения,
+	ОтветственныеИсполнители.Комментарий КАК Комментарий
+ИЗ
+	РегистрСведений.ОтветственныеИсполнители КАК ОтветственныеИсполнители
+ГДЕ
+	ОтветственныеИсполнители.Сотрудник = &amp;ТекущийСотрудник
+	И ОтветственныеИсполнители.Исполнено = ЛОЖЬ</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВнешнийНомер</dcssch:dataPath>
+					<dcssch:field>ВнешнийНомер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Документ</dcssch:dataPath>
+					<dcssch:field>Документ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаНазначения</dcssch:dataPath>
+					<dcssch:field>ДатаНазначения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Назначил</dcssch:dataPath>
+					<dcssch:field>Назначил</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СрокИсполнения</dcssch:dataPath>
+					<dcssch:field>СрокИсполнения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Сотрудник</dcssch:dataPath>
+					<dcssch:field>Сотрудник</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Исполнено</dcssch:dataPath>
+					<dcssch:field>Исполнено</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаИсполнения</dcssch:dataPath>
+					<dcssch:field>ДатаИсполнения</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>ТекущийСотрудник</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущий сотрудник</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.ПрокурорскиеРаботники</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>InformationRegister.ОтветственныеИсполнители</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Реквизит1" id="6">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>
