@@ -187,6 +187,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Report.ОтчетПоОбращениям</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>CommonCommand.РегистрироватьДокумент</name>
 		<right>
 			<name>View</name>
@@ -269,6 +280,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Report.ОтчетПоПоручениям</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.НумерацияДокументов</name>
 		<right>
 			<name>Read</name>
@@ -284,13 +306,6 @@
 		</right>
 		<right>
 			<name>Edit</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>CommonCommand.Отчеты</name>
-		<right>
-			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>

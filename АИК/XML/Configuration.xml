@@ -282,7 +282,6 @@
 			<CommonCommand>СоздатьПроект</CommonCommand>
 			<CommonCommand>ПроектыГотовыеКРегистрации</CommonCommand>
 			<CommonCommand>Поиск</CommonCommand>
-			<CommonCommand>Отчеты</CommonCommand>
 			<CommonForm>НачалнаяСтраница</CommonForm>
 			<CommonForm>ФормаВыбораТипаДокумента</CommonForm>
 			<CommonForm>ФормаПоискаДокумента</CommonForm>
@@ -296,6 +295,8 @@
 			<Enum>СтатусыДокументов</Enum>
 			<Enum>ТипыДокументов</Enum>
 			<Enum>ТипыСвязейДокументов</Enum>
+			<Report>ОтчетПоОбращениям</Report>
+			<Report>ОтчетПоПоручениям</Report>
 			<InformationRegister>ЖурналАудита</InformationRegister>
 			<InformationRegister>НормативныеСроки</InformationRegister>
 			<InformationRegister>НумерацияДокументов</InformationRegister>
