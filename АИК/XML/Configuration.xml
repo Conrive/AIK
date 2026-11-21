@@ -297,8 +297,6 @@
 			<Enum>ТипыСвязейДокументов</Enum>
 			<Report>ОтчетПоОбращениям</Report>
 			<Report>ОтчетПоПоручениям</Report>
-			<InformationRegister>ЖурналАудита</InformationRegister>
-			<InformationRegister>НормативныеСроки</InformationRegister>
 			<InformationRegister>НумерацияДокументов</InformationRegister>
 			<InformationRegister>СвязанныеДокументы</InformationRegister>
 			<InformationRegister>СтатусыОзнакомления</InformationRegister>

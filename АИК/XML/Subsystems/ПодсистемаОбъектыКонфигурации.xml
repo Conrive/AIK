@@ -24,8 +24,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыДокументов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыДокументов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыСвязейДокументов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЖурналАудита</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НормативныеСроки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">2a5ce540-75d9-474e-907c-43d257f37696</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">51a5fa45-aa57-434c-a968-4233b0f96989</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НумерацияДокументов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СвязанныеДокументы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СтатусыОзнакомления</xr:Item>
